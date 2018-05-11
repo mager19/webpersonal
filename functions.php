@@ -45,6 +45,7 @@ if ( ! function_exists( 'portafolio_setup' ) ) :
 		add_image_size( 'imagen-trabajos', 450, 500, true);
 		add_image_size( 'imagen-cover', 1280, 700, true);
 		add_image_size( 'imagen-article', 1280, 450, true);
+		add_image_size( 'imagen-acerca', 350, 500, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
