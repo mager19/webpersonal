@@ -72,6 +72,9 @@ if ( ! function_exists( 'portafolio_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
+		// Añado soporte de Excerpt en las pages.
+		add_post_type_support( 'page', 'excerpt' );
+
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
