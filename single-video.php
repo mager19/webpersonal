@@ -12,34 +12,40 @@ get_template_part( 'template-parts/header', 'internas');
 ?>
 <div class="container">
 	<div class="row">
-		<div class="col-12">			
-			<?php
-			while ( have_posts() ) :
-				the_post();
+		<div class="col-12">
+			<div class="contenedor">
 
-				the_post_thumbnail();
-			?>
+				<?php
+					while ( have_posts() ) :
+						the_post();
+					?>
 
-				<div class="row">
-					<div class="col-md-9 col-sm-12">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla explicabo amet voluptatibus ratione numquam soluta commodi, vel consequuntur repellat ad. Non itaque, optio minus omnis quam assumenda voluptatum molestiae.
-					</div>
+					<iframe id="player" type="text/html" width="100%" height="550"
+					  src="https://www.youtube.com/embed/<?php the_field('urlvideo'); ?>"
+					  frameborder="0">
+					</iframe>
 
-					<div class="col-3 col- d-none d-sm-block">
-						side bar
-					</div>
-				</div>
-			
-			<?
-				the_post_navigation();
+					<div class="single__info">
+						<div class="row">
+							<div class="col-12">
+								<script src="https://apis.google.com/js/platform.js"></script>
+								<div class="g-ytsubscribe" data-channelid="UCAP5gFl_ZkCFTB7QtmhDTRQ" data-layout="full" data-count="hidden"></div>
+								<p><?php the_content(); ?></p>
+							</div>							
+						</div>						
+					</div>					
+			</div>		
+				<?php get_template_part( 'template-parts/content', 'trabajemos' ); 
+				
+					the_post_navigation();
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
 
-			endwhile; // End of the loop.
-			?>
+				endwhile; // End of the loop.
+				?>
 		</div>
 	</div>
 </div>

@@ -1083,10 +1083,6 @@ header h1 a, header h1 a:visited{
 	margin-right: 1.5em;
 }
 
-.menuSocial li img{
-	width: 80%;
-}
-
 /* Contenido */
 .menuSecundario{
 	border-left:2px solid #99D1D1;
@@ -1318,3 +1314,24 @@ footer a, footer a:visited{
 .articulo__item__readmore:hover {
 	color:#EE7785;
 }
+
+/*single info*/
+.single__info{
+	margin: 2em 0;
+}
+
+.single__info p{
+	margin-top: 2em;
+	line-height: 1.8em;
+}
+
+.single__sidebar{
+	background-color: #F0F6F6;
+	margin-top: 4em;
+	padding: 1.5em;
+}
+
+iframe{
+	border:2px solid #dcdcdc;
+}
+

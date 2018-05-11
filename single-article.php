@@ -15,11 +15,15 @@ get_template_part( 'template-parts/header', 'internas');
 		<div class="col-12">			
 			<?php
 			while ( have_posts() ) :
-				the_post();
+				the_post();?>
 
-				get_template_part( 'template-parts/content', get_post_type() );
+				<div class="contenedor">
+					<?php 
+					the_post_thumbnail( $size = 'imagen-article' );?>
+					<p><?php the_content();?> </p>
+				</div>
 
-				the_post_navigation();
+				<?php the_post_navigation();
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

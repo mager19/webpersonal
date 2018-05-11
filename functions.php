@@ -44,6 +44,7 @@ if ( ! function_exists( 'portafolio_setup' ) ) :
 		add_image_size( 'imagen-front', 450, 300, true );
 		add_image_size( 'imagen-trabajos', 450, 500, true);
 		add_image_size( 'imagen-cover', 1280, 700, true);
+		add_image_size( 'imagen-article', 1280, 450, true);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
@@ -115,8 +116,9 @@ function portafolio_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'portafolio' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+		'class'         => 'sidebar__content',
 	) );
 }
 add_action( 'widgets_init', 'portafolio_widgets_init' );
