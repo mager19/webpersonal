@@ -1335,3 +1335,17 @@ iframe{
 	border:2px solid #dcdcdc;
 }
 
+/***Acerca *****/
+
+.contenido__acerca{
+	padding: 0em 2em;
+}
+
+
+
+.menuSecundario {
+    border-left: 2px solid #99D1D1;
+    position: absolute;
+    right: 0;
+    margin-left: -3em;
+}

@@ -33,7 +33,9 @@ get_header();?>
 			</div>
 
 			<div class="col-8">
-				<?php the_content(); ?>
+				<div class="contenido__acerca">
+					<?php the_content(); ?>
+				</div>
 			</div>
 
 			<?php
