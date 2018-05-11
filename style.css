@@ -1342,10 +1342,12 @@ iframe{
 }
 
 
+/***********MEDIA QUERIES**********/
 
-.menuSecundario {
-    border-left: 2px solid #99D1D1;
-    position: absolute;
-    right: 0;
-    margin-left: -3em;
+@media screen and (max-width: 768px){
+	.menuSecundario {
+        margin-left: -3em;
+	}
 }
+
+
