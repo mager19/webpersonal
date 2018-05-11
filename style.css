@@ -1067,7 +1067,7 @@ header h1 a, header h1 a:visited{
 	margin-top: -5px;
 }
 
-.cabezal h2 strong{
+.cabezal h2 p strong{
 	color:#EE7785!important;
 	font-weight: 800!important;
 }
