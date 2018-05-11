@@ -8,7 +8,7 @@
 					$loop = new WP_Query( $args );
 
 					if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
-						<h2><?php the_content(); ?></h2>
+						<h2><?php the_excerpt(); ?></h2>
 					<!-- post -->
 					<?php endwhile; ?>
 					<!-- post navigation -->
