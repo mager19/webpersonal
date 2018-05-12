@@ -28,11 +28,11 @@
 		<div class="container">
 			<div class="row">
 
-				<div class="col-4">
+				<div class="col-4 col-md-4">
 					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div>
 
-				<div class="col-4 offset-4">
+				<div class="col-4 offset-4 col-md-6 offset-md-2">
 					<nav id="site-navigation" class="main-navigation text-right">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'portafolio' ); ?></button>
 						<?php
