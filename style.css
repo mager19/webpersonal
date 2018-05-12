@@ -1222,6 +1222,11 @@ footer a, footer a:visited{
 	letter-spacing: 1px;
 }
 
+blockquote{
+	background-color:#f9f9f9;
+	padding: 2em;
+}
+
 .trabajemos__juntos{
 	background-color: #f9f9f9;
 	padding: 2em;
@@ -1340,6 +1345,8 @@ iframe{
 .contenido__acerca{
 	padding: 0em 2em;
 }
+
+
 
 
 /***********MEDIA QUERIES**********/
