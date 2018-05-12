@@ -4,7 +4,7 @@
 			<div class="col-12">
 				<?php 
 
-					$args = array( 'page_id' => 14);
+					$args = array( 'page_id' => 64);
 					$loop = new WP_Query( $args );
 
 					if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
