@@ -166,6 +166,10 @@ add_action( 'wp_enqueue_scripts', 'portafolio_scripts' );
  */
 require get_template_directory() . '/inc/custom-header.php';
 
+require_once('bs4navwalker.php');
+
+register_nav_menu('top', 'Top menu');
+
 /**
  * Custom template tags for this theme.
  */
