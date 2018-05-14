@@ -1035,7 +1035,7 @@ header h1 a, header h1 a:visited{
 }
 
 .menu li a{
-	color:#036084;
+	color:#036084!important;
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 1.1em;
 }
@@ -1087,7 +1087,7 @@ header h1 a, header h1 a:visited{
 .menuSecundario{
 	border-left:2px solid #99D1D1;
 	position: absolute;
-	right: 0;
+	right: 0.4em;
 }
 
 .menuSecundario li{
@@ -1095,7 +1095,7 @@ header h1 a, header h1 a:visited{
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 700;
-	margin-left: 1em;
+	margin-right: 1em;
 }
 
 .menuSecundario li a{
@@ -1374,6 +1374,25 @@ iframe{
 	    font-size: 1.5em;
 	}
 
+	.contenido__item {
+    	padding: 0em;
+    	overflow: hidden;
+    	margin-bottom: 2em;
+	}
+
 }
 
+@media screen and (max-width: 480px){
 
+	.menuSecundario {
+	    margin-left: -2em;
+	    position: inherit;
+	}
+
+	.menu{
+		position: inherit;
+		right: 0;
+	}
+
+	
+}

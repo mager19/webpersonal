@@ -46,7 +46,7 @@ get_template_part( 'template-parts/contenido', 'cabezal' );
 <section class="instagram contenedor">
 	<div class="container">
 		<div class="row">
-			<div class="col-5 offset-7">
+			<div class="col-9 offset-3 col-md-5 offset-md-7">
 				<h3 class="titleInstagram">Soy yo / Instagram</h3>
 			</div>
 		</div>
@@ -54,7 +54,6 @@ get_template_part( 'template-parts/contenido', 'cabezal' );
 	<div class="container-fluid">
 		<div class="instagramFeed" id="instafeed">					
 		</div>			
-		
 	</div>
 </section>
 
