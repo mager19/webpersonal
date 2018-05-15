@@ -166,10 +166,8 @@ add_action( 'wp_enqueue_scripts', 'portafolio_scripts' );
  */
 require get_template_directory() . '/inc/custom-header.php';
 
-require_once('bs4navwalker.php');
+require_once( get_stylesheet_directory() . '/bs4navwalker.php' );
 
-
->>>>>>>>> Temporary merge branch 2
 
 /**
  * Custom template tags for this theme.
