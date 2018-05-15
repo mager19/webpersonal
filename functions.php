@@ -169,7 +169,7 @@ require get_template_directory() . '/inc/custom-header.php';
 require_once('bs4navwalker.php');
 
 
->>>>>>>>> Temporary merge branch 2
+
 
 /**
  * Custom template tags for this theme.
